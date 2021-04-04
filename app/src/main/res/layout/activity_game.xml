@@ -1,0 +1,243 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".GameActivity">
+
+
+    <LinearLayout
+        android:layout_width="84dp"
+        android:layout_height="78dp"
+        android:layout_marginTop="52dp"
+        android:background="@color/white"
+        android:orientation="vertical"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.122"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/gridLayout">
+
+
+        <ImageButton
+            android:id="@+id/checkButton2"
+            android:layout_width="45dp"
+            android:layout_height="42dp"
+            android:layout_gravity="center"
+            android:background="@color/white"
+            android:forceDarkAllowed="false"
+            app:srcCompat="@drawable/control" />
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="55dp"
+            android:layout_height="25dp"
+            android:layout_gravity="center"
+            android:text="@string/kontol"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            app:layout_constraintTop_toBottomOf="@+id/imageButton" />
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="84dp"
+        android:layout_height="78dp"
+        android:layout_marginTop="52dp"
+        android:background="@color/white"
+        android:orientation="vertical"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.553"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/gridLayout">
+
+        <ImageButton
+            android:id="@+id/eraserButton2"
+            android:layout_width="51dp"
+            android:layout_height="42dp"
+            android:layout_gravity="center"
+            android:background="@drawable/eraser_background" />
+
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="55dp"
+            android:layout_height="25dp"
+            android:layout_gravity="center"
+            android:text="@string/eraserbutton"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            app:layout_constraintTop_toBottomOf="@+id/imageButton2" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="84dp"
+        android:layout_height="78dp"
+        android:layout_marginTop="52dp"
+        android:background="@color/white"
+        android:orientation="vertical"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.951"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/gridLayout">
+
+
+        <ImageButton
+            android:id="@+id/pencilButton2"
+            android:layout_width="51dp"
+            android:layout_height="42dp"
+            android:layout_gravity="center"
+
+            android:background="@drawable/pencil_background"
+
+            />
+
+        <TextView
+            android:id="@+id/textView4"
+            android:layout_width="55dp"
+            android:layout_height="25dp"
+            android:layout_gravity="center"
+            android:text="@string/pencilbutton"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+    <RadioGroup
+        android:id="@+id/RadioGroup1"
+        android:layout_width="369dp"
+        android:layout_height="55dp"
+        android:gravity="center"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.450"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/gridLayout">
+
+        <com.example.sudokugame.CustomRadioButton
+            android:id="@+id/Set1"
+            android:layout_width="45dp"
+            android:layout_height="60dp"
+            android:background="@drawable/radiobutton_background"
+
+            android:button="@android:color/transparent"
+            android:gravity="center"
+            android:text="@string/one"
+            android:textSize="25sp"
+            android:textStyle="bold" />
+
+        <com.example.sudokugame.CustomRadioButton
+            android:id="@+id/Set2"
+            android:layout_width="45dp"
+            android:layout_height="match_parent"
+            android:background="@drawable/radiobutton_background"
+
+            android:button="@android:color/transparent"
+            android:gravity="center"
+            android:text="@string/two"
+            android:textSize="25sp"
+            android:textStyle="bold" />
+
+        <com.example.sudokugame.CustomRadioButton
+            android:id="@+id/Set3"
+            android:layout_width="40dp"
+            android:layout_height="match_parent"
+            android:background="@drawable/radiobutton_background"
+
+            android:button="@android:color/transparent"
+            android:gravity="center"
+            android:text="@string/three"
+            android:textSize="25sp"
+            android:textStyle="bold" />
+
+        <com.example.sudokugame.CustomRadioButton
+            android:id="@+id/Set4"
+            android:layout_width="40dp"
+            android:layout_height="match_parent"
+            android:background="@drawable/radiobutton_background"
+
+            android:button="@android:color/transparent"
+            android:gravity="center"
+            android:text="@string/four"
+            android:textSize="25sp"
+            android:textStyle="bold" />
+
+        <com.example.sudokugame.CustomRadioButton
+            android:id="@+id/Set5"
+            android:layout_width="40dp"
+            android:layout_height="match_parent"
+            android:background="@drawable/radiobutton_background"
+
+            android:button="@android:color/transparent"
+            android:gravity="center"
+            android:text="@string/five"
+            android:textSize="25sp"
+
+            android:textStyle="bold" />
+
+        <com.example.sudokugame.CustomRadioButton
+            android:id="@+id/Set6"
+            android:layout_width="40dp"
+            android:layout_height="match_parent"
+            android:background="@drawable/radiobutton_background"
+
+            android:button="@android:color/transparent"
+            android:gravity="center"
+            android:text="@string/six"
+            android:textSize="25sp"
+            android:textStyle="bold" />
+
+        <com.example.sudokugame.CustomRadioButton
+            android:id="@+id/Set7"
+            android:layout_width="40dp"
+            android:layout_height="match_parent"
+            android:background="@drawable/radiobutton_background"
+
+            android:button="@android:color/transparent"
+            android:gravity="center"
+            android:text="@string/seven"
+            android:textSize="25sp"
+            android:textStyle="bold" />
+
+        <com.example.sudokugame.CustomRadioButton
+            android:id="@+id/Set8"
+            android:layout_width="40dp"
+            android:layout_height="match_parent"
+            android:background="@drawable/radiobutton_background"
+
+            android:button="@android:color/transparent"
+            android:gravity="center"
+            android:text="@string/eight"
+            android:textSize="25sp"
+            android:textStyle="bold" />
+
+        <com.example.sudokugame.CustomRadioButton
+            android:id="@+id/Set9"
+            android:layout_width="40dp"
+            android:layout_height="match_parent"
+            android:background="@drawable/radiobutton_background"
+
+            android:button="@android:color/transparent"
+            android:gravity="center"
+            android:text="@string/nine"
+            android:textSize="25sp"
+            android:textStyle="bold" />
+    </RadioGroup>
+
+
+    <androidx.gridlayout.widget.GridLayout
+        android:id="@+id/gridLayout"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:layout_marginTop="8dp"
+        android:background="@android:color/background_dark"
+        app:columnCount="9"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.529"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:rowCount="9">
+
+    </androidx.gridlayout.widget.GridLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
